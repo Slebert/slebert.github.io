@@ -3,5 +3,8 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
 body {
+	background-image: url("dank.png");
+	background-repeat: repeat;
 }
