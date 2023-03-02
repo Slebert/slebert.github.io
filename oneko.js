@@ -132,7 +132,7 @@
         const diffY = nekoPosY - mousePosY;
         const distance = Math.sqrt(diffX ** 2 + diffY ** 2);
 
-        if (distance < nekoSpeed || distance < 48 || distance > 128) {
+        if (distance < nekoSpeed || distance < 48 || distance > 512) {
             idle();
             return;
         }
