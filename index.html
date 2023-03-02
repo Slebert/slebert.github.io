@@ -3,16 +3,25 @@
 <link href="css/stylesheet.css" rel="stylesheet">
 <style>
 h1 {text-align: center;}
-body {
-  background-image: url("dank.png");
-  background-repeat: repeat-y;
+@keyframes move {
+	from {background-position-x : 0px;}
+	to {background-position-x : 1205px;}
 }
+body {
+  background-image: url("images/dank.png");
+  background-color: rgba(167, 232, 231, 0.2);
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 </style>
 </head>
 <body>
 <script src="oneko.js"></script>
-<img src="images/huhu.png" alt="huhuhuhuhu" class="center">
-<h1 style="color:blue;">1-833-SLEBERT TOLL FREE</h1>
+<!--img src="images/huhu.png" alt="huhuhuhuhu" class="center"-->
+<!--h1 style="color:blue;">1-833-SLEBERT TOLL FREE</h1-->
 </body>
 
 </html>
