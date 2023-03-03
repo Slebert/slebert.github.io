@@ -1,7 +1,7 @@
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 .huhu1 {
 	background-image: url("../images/dank.webp");
@@ -10,15 +10,23 @@
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
-
+.huhu2 {
+	font-family: "Lucida Console";
+	position: fixed;
+	left: 2;
+	bottom: -17;
+	width: 100%;
+	color: rgba(0, 200, 0, 1);
+	text-align: left;
+}
 @keyframes move {
 	from {background-position-x : 0px;}
 	to {background-position-x : 1205px;}
 }
 body {
 	margin: 0;
-  background: linear-gradient(135deg, #444cf755 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #444cf7 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #444cf755 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%) 0px 0/ 20px 20px;
+	background: linear-gradient(135deg, #444cf755 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #444cf7 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #444cf755 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%) 0px 0/ 20px 20px;
 }
