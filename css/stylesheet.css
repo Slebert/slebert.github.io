@@ -20,6 +20,8 @@
 	position: fixed;
 	bottom: 0px;
 	left: 0px;
+	border: none;
+	background: none;
 }
 @keyframes move {
 	from {background-position-x : 0px;}
