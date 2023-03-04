@@ -1,41 +1,41 @@
 .center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .huhu1 {
-	background-image: url("../images/dank.webp");
-	background-repeat: repeat-x;
-	animation-name: move;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	width: 100%;
-	height: 100%;
+    background-image: url("../images/dank.webp");
+    background-repeat: repeat-x;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 100vw;
+    height: 100vh;
 }
 .huhuButton {
-	font-family: "Lucida Console";
-	font-weight: bold;
-	color: #5EC05E;
-	position: fixed;
-	bottom: 0px;
-	left: 0px;
-	border: none;
-	background: none;
+    font-family: "Lucida Console";
+    font-weight: bold;
+    color: #5EC05E;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    border: none;
+    background: none;
 }
 @keyframes move {
-	from {background-position-x : 0px;}
-	to {background-position-x : 1205px;}
+    from {background-position-x : 0px;}
+    to {background-position-x : 1205px;}
 }
 .backgroundLinearGradientBlue {
-	margin: 0;
-	background: linear-gradient(135deg, #444cf755 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #444cf7 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #444cf755 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%) 0px 0/ 20px 20px;
+    margin: 0;
+    background: linear-gradient(135deg, #444cf755 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #444cf7 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #444cf755 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%) 0px 0/ 20px 20px;
 }
 .backgroundLinearGradientGreen {
-	margin: 0;
-	background: linear-gradient(135deg, #4CF74455 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #4CF744 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #4CF74455 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #4CF744 25%, #E5F7E5 25%) 0px 0/ 20px 20px;
+    margin: 0;
+    background: linear-gradient(135deg, #4CF74455 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #4CF744 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #4CF74455 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #4CF744 25%, #E5F7E5 25%) 0px 0/ 20px 20px;
 }
 .backgroundLinearGradientRed {
-	margin: 0;
-	background: linear-gradient(135deg, #F7444455 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #F74444 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #F7444455 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #F74444 25%, #F7E5E5 25%) 0px 0/ 20px 20px;
+    margin: 0;
+    background: linear-gradient(135deg, #F7444455 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #F74444 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #F7444455 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #F74444 25%, #F7E5E5 25%) 0px 0/ 20px 20px;
 }
