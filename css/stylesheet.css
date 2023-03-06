@@ -27,6 +27,20 @@
     border: none;
     background: none;
 }
+.LichessButton {
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	width: 32px;
+	height: 32px;
+	background: none;
+	border: none;
+}
+.LichessButton:hover {
+	background: url("../images/LichessLogo.webp");
+	background-size: 32px;
+	background-repeat: no-repeat;
+}
 @keyframes move {
     from {background-position-x : 0px;}
     to {background-position-x : 1205px;}
