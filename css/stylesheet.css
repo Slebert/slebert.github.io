@@ -27,7 +27,7 @@
     border: none;
     background: none;
 }
-.LichessButton {
+.lichessButton {
 	position: fixed;
 	right: 0px;
 	bottom: 0px;
@@ -36,10 +36,55 @@
 	background: none;
 	border: none;
 }
-.LichessButton:hover {
+.lichessButton:hover {
 	background: url("../images/LichessLogo.webp");
 	background-size: 32px;
 	background-repeat: no-repeat;
+}
+.minMaxButton{
+	font-family: "Lucida Console";
+	font-weight: bold;
+	font-size: 16px;
+	position: fixed;
+	color: rgba(var(--color1, 0.33));
+	background: none;
+	border: none;
+	width: 32px;
+	height: 32px;
+	right: 0px;
+	top: 0px;
+}
+.minMaxButton:hover{
+	color: #5EC05E;
+}
+.popOut {
+	display: none;
+	position: fixed;
+	right:0px;
+	margin: 32px auto;
+	background-color: rgba(var(--color1), 25%);
+	padding: 5px;
+}
+.screen {
+	width:96px;
+	height:20px;
+	font-family: "Lucida Console";
+	background-color:black;
+	color: #5EC05E;
+}
+.keypad {
+	width:96px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background-color: none;
+}
+.key {
+	padding: none;
+	text-align: center;
+	width:32px;
+	height:32px;
+}
+.key:hover {
 }
 @keyframes move {
     from {background-position-x : 0px;}
