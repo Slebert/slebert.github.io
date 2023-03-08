@@ -11,15 +11,9 @@ function keyPressed(key){
 function submit(){
 	const submission = document.getElementById("screen").innerHTML;
 	/* cheater :p */
-	switch(submission){
-		case '69':
-			break;
-		case '420':
-			break;
-		case '4848':
-			bgRandColor();
-			break;
-	}
+	const options = [];
+	options["4848"]= bgRandColor();
+	options[submission];
 }
 function minMax() {
 	if (document.getElementById('popOut').style.display == 'inline'){
