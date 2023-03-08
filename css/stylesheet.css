@@ -62,27 +62,32 @@
 	left: 50%;
 	top: 50%;
 	display: none;
-	background-color: rgba(var(--color1), 25%);
+	padding: 5px;
+	border-style: outset;
+	border-color: rgba(var(--color1), 50%);
+	border-radius: 10px;
+	background-color: rgba(var(--color1), 75%);
 	transform: translate(-50%, -50%);
 }
 .screen {
-	text-align:right;
-	width:96px;
+	text-align: right;
+	border-style: inset;
+	border-color: rgba(var(--color1), 75%);
+	width:90px;
 	height:14px;
 	font-family: "Lucida Console";
 	font-weight:bold;
 	background-color:black;
-	color: #5EC05E;
+	color: rgba(var(--color1), 100%);
 }
 .keypad {
 	width:96px;
 	display: grid;
 	grid-template-columns: auto auto auto;
-	background-color: none;
+	background-color: rgba(var(--color1), 50%);;
 }
 .key {
-	padding: none;
-	border: none;
+	border:none;
 	text-align: center;
 	width:32px;
 	height:32px;
