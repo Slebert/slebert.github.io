@@ -12,8 +12,8 @@ function submit(){
 	const submission = document.getElementById("screen").innerHTML;
 	/* cheater :p */
 	const options = [];
-	options["4848"]= bgRandColor();
-	options[submission];
+	options["4848"] = bgRandColor;
+	options[submission]();
 }
 function minMax() {
 	if (document.getElementById('popOut').style.display == 'inline'){
