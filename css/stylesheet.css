@@ -58,12 +58,12 @@
 	color: #5EC05E;
 }
 .popOut {
+	position: absolute;
+	left: 50%;
+	top: 50%;
 	display: none;
-	position: fixed;
-	right:0px;
-	margin: 32px auto;
 	background-color: rgba(var(--color1), 25%);
-	padding: 5px;
+	transform: translate(-50%, -50%);
 }
 .screen {
 	text-align:right;
