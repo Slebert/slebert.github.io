@@ -13,6 +13,7 @@ function submit(){
 	/* cheater :p */
 	const options = [];
 	options["000000000"] = inverted;
+	options["7532378"] = slebert;
 	options["69"] = sixtyNine;
 	options["4848"] = bgRandColor;
 	options[submission]();
@@ -42,5 +43,19 @@ function inverted(){
 	}else{
 		body.style.filter = "invert(100%)"
 		body.style.background = "black";
+	}
+}
+function slebert(){
+	const huhu = document.getElementById("slebert");
+	if(huhu){
+		huhu.outerHTML = "";
+	}else{
+		const slebertDiv = document.createElement("div");
+		slebertDiv.id = "slebert";
+		slebertDiv.style.backgroundImage = "url(images/huhu.webp)"
+		slebertDiv.style.width = "492px";
+		slebertDiv.style.height = "466px";
+		slebertDiv.classList.add('center');
+		document.getElementById("huhu1").appendChild(slebertDiv);
 	}
 }
