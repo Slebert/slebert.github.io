@@ -66,9 +66,11 @@
 	padding: 5px;
 }
 .screen {
+	text-align:right;
 	width:96px;
-	height:20px;
+	height:14px;
 	font-family: "Lucida Console";
+	font-weight:bold;
 	background-color:black;
 	color: #5EC05E;
 }

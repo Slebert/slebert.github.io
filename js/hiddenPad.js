@@ -3,7 +3,7 @@ function setScreen(x) {
 }
 function keyPressed(key){
 	const current = String(document.getElementById("screen").innerHTML);
-	if (current.length < 10){
+	if (current.length < 9){
 		document.getElementById("screen").innerHTML += key;
 	}
 
