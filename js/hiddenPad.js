@@ -39,7 +39,6 @@ function inverted(){
 	const body = document.getElementById("body");
 	if (body.style.filter == "invert(100%)"){
 		body.style = "";
-		body.class = "bgLinearGradient";
 	}else{
 		body.style.filter = "invert(100%)"
 		body.style.background = "black";
