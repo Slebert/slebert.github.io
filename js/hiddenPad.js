@@ -13,11 +13,12 @@ function submit(){
 	/* cheater :p */
 	switch(submission){
 		case '69':
-			
+			break;
 		case '420':
-			
+			break;
 		case '4848':
 			bgRandColor();
+			break;
 	}
 }
 function minMax() {
