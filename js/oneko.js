@@ -65,6 +65,7 @@
         nekoEl.style.imageRendering = "pixelated";
         nekoEl.style.left = "16px";
         nekoEl.style.top = "16px";
+		nekoEl.style.filter = "invert(100%)"
 
         document.body.appendChild(nekoEl);
 

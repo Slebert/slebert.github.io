@@ -12,13 +12,36 @@ function submit(){
 	const submission = document.getElementById("screen").innerHTML;
 	/* cheater :p */
 	const options = [];
+	options["000000000"] = inverted;
+	options["69"] = sixtyNine;
 	options["4848"] = bgRandColor;
 	options[submission]();
 }
 function minMax() {
-	if (document.getElementById('popOut').style.display == 'inline'){
-		document.getElementById('popOut').style.display = 'none';
+	const popOut = document.getElementById('popOut');
+	if (popOut.style.display == 'inline'){
+		popOut.style.display = 'none';
 	}else{
-		document.getElementById('popOut').style.display = 'inline';
+		popOut.style.display = 'inline';
+	}
+}
+function sixtyNine() {
+	const nice = document.getElementById("nice")
+	if(nice){
+		nice.outerHTML = "";
+	}else{
+		const niceDivBro = document.createElement("div");
+		niceDivBro.id = "nice";
+		document.body.appendChild(niceDivBro);
+	}
+}
+function inverted(){
+	const body = document.getElementById("body");
+	if (body.style.filter == "invert(100%)"){
+		body.style = "";
+		body.class = "bgLinearGradient";
+	}else{
+		body.style.filter = "invert(100%)"
+		body.style.background = "black";
 	}
 }

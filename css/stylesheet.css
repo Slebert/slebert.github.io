@@ -82,9 +82,11 @@
 }
 .key {
 	padding: none;
+	border: none;
 	text-align: center;
 	width:32px;
 	height:32px;
+	background-image: url(../images/squareButton.webp);
 }
 .key:hover {
 }
