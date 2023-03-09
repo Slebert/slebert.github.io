@@ -66,6 +66,7 @@
         nekoEl.style.left = "16px";
         nekoEl.style.top = "16px";
 		nekoEl.style.filter = "invert(100%)"
+		nekoEl.style.zIndex = "2";
 
         document.body.appendChild(nekoEl);
 

@@ -17,8 +17,10 @@
 	<script src="js/hiddenPad.js"></script>
 </head>
 <body id="body" class="bgLinearGradient">
+	
     <div id="huhu1" class="huhu1">
-		<button onclick="minMax()" class="minMaxButton">?</button>
+		<button onclick="minMax('popOut')" class="minMaxButton">?</button>
+		<div id="wrapper" class="wrapper"></div>
 		<div class="popOut" id="popOut">
 			<div id="screen" class="screen" ></div>
 			<div class="keypad">
@@ -39,6 +41,7 @@
         <button onclick="bgRandColor()" class='huhuButton'>huhu</button>
 		<button onclick="window.open('https://www.lichess.org', '_blank')" class="lichessButton"/>
     </div>
+	
     <script src="js/oneko.js"></script>
 	
 </body>

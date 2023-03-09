@@ -12,14 +12,15 @@ function submit(){
 	const submission = document.getElementById("screen").innerHTML;
 	/* cheater :p */
 	const options = [];
+	options["123"] = underTheSeaBert;
 	options["000000000"] = inverted;
 	options["7532378"] = slebert;
 	options["69"] = sixtyNine;
 	options["4848"] = bgRandColor;
 	options[submission]();
 }
-function minMax() {
-	const popOut = document.getElementById('popOut');
+function minMax(id) {
+	const popOut = document.getElementById(id);
 	if (popOut.style.display == 'inline'){
 		popOut.style.display = 'none';
 	}else{
@@ -57,5 +58,23 @@ function slebert(){
 		slebertDiv.style.height = "466px";
 		slebertDiv.classList.add('center');
 		document.getElementById("huhu1").appendChild(slebertDiv);
+	}
+}
+function underTheSeaBert(){
+	const spanCheck = document.getElementById("dot");
+	if (spanCheck){
+		document.getElementById("body").classList.remove("bgUnderTheSeaBert");
+		document.getElementById("body").classList.add("bgLinearGradient");
+		document.getElementById("wrapper").innerHTML = "";
+	}else{
+		document.getElementById("body").classList.remove("bgLinearGradient");
+		document.getElementById("body").classList.add("bgUnderTheSeaBert");
+		for (let i = 0; i < 14; i++){
+			const div = document.createElement("div");
+			const span = document.createElement("span");
+			span.classList.add('dot');
+			div.innerHTML = '<span id="dot" class="dot"></span>';
+			document.getElementById("wrapper").appendChild(div);
+		}
 	}
 }
