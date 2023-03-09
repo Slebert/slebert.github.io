@@ -12,6 +12,7 @@ function submit(){
 	const submission = document.getElementById("screen").innerHTML;
 	/* cheater :p */
 	const options = [];
+	options["777"] = jackpot;
 	options["123"] = underTheSeaBert;
 	options["000000000"] = inverted;
 	options["7532378"] = slebert;
@@ -76,5 +77,13 @@ function underTheSeaBert(){
 			div.innerHTML = '<span id="dot" class="dot"></span>';
 			document.getElementById("wrapper").appendChild(div);
 		}
+	}
+}
+function jackpot(){
+	const huhu1 = document.getElementById("huhu1");
+	if (huhu1.style.animationName != "jackpot"){
+		huhu1.style.animationName = "jackpot";
+	}else{
+		huhu1.style.animationName = "move";
 	}
 }

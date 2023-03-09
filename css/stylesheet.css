@@ -11,7 +11,8 @@
 }
 .huhu1 {
     background-image: url("../images/dank.webp");
-    background-repeat: repeat-x;
+    background-repeat: repeat;
+	background-position: center;
     animation-name: move;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -115,6 +116,10 @@
 @keyframes move {
     from {background-position-x : 0px;}
     to {background-position-x : 1205px;}
+}
+@keyframes jackpot {
+	from{background-position-y: 0px}
+	to {background-position-y: 1505px}
 }
 .bgLinearGradient {
     margin: 0;
