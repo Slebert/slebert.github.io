@@ -12,7 +12,7 @@
 .huhu1 {
     background-image: url("../images/dank.webp");
     background-repeat: repeat;
-	background-position: center;
+	background-position-x: center;
     animation-name: move;
     animation-duration: 2s;
     animation-iteration-count: infinite;
