@@ -25,6 +25,7 @@ function submit(){
 	options["nice!"] = sixtyNine;
 	options["4848"] = bgRandColor;
 	options["420"] = weedRain;
+	options["0"] = dvdVideo;
 	options[submission]();
 }
 function minMax(id) {
@@ -110,6 +111,30 @@ function jackpot(){
 		huhu1.style.animationName = "move";
 		setScreen("777");
 	}
+}
+function dvdVideo(){
+	dvdVisible = document.getElementById('dvd_video').style.visibility;
+	if (dvdVisible == "visible"){
+		document.getElementById('dvd_video').style.visibility = "hidden";
+	}else{
+		document.getElementById('dvd_video').style.visibility = "visible";
+		setInterval(renderDvdVideo,880);
+	}
+}
+
+function renderDvdVideo(){
+	dvdVisible = document.getElementById('dvd_video').style.visibility;
+
+	document.getElementById("dvd_video").src="images/dvd_video" + dvdVideoNumber +".png";
+	incrementDvdVideoNumber();
+
+}
+
+function incrementDvdVideoNumber(){
+	dvdVideoNumber++;
+		if (dvdVideoNumber>4){
+			dvdVideoNumber=1;
+		}
 }
 function lichessTV(){
 
