@@ -242,7 +242,6 @@ div .dot {
   }
 }
 .nice {
-	
 	font-family: "Lucida Console";
 	font-weight: bold;
 	font-size: 69px; 
@@ -258,13 +257,13 @@ div .dot {
 		
 	}
 	80%{
-		filter: none;
+		filter: blur(0px);
 		color: rgba(var(--color1), 100%);
 		transform-origin: 0 0;
 		transform: scale(3) translate(-50%, -50%);
 	}
 	100%{
-		filter: none;
+		filter: blur(0px);
 		color: rgba(var(--color1), 100%);
 		transform-origin: 0 0;
 		transform: scale(3) translate(-50%, -50%);
