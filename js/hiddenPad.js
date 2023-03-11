@@ -12,6 +12,7 @@ function submit(){
 	const submission = document.getElementById("screen").innerHTML;
 	/* cheater :p */
 	const options = [];
+	options["64"] = lichessTV;
 	options["777"] = jackpot;
 	options["123"] = underTheSeaBert;
 	options["000000000"] = inverted;
@@ -85,5 +86,17 @@ function jackpot(){
 		huhu1.style.animationName = "jackpot";
 	}else{
 		huhu1.style.animationName = "move";
+	}
+}
+function lichessTV(){
+	const check = document.getElementById("lichessTV");
+	if (check){
+		check.outerHTML = "";
+	}else{
+		const div = document.createElement("div");
+		div.innerHTML = "<iframe src='https://lichess.org/tv/frame?theme=wood4&bg=dark' style='width: 400px; height: 444px;' allowtransparency='true' frameborder='0'></iframe>";
+		div.id = 'lichessTV';
+		div.classList.add("center");
+		document.getElementById("huhu1").appendChild(div);
 	}
 }
