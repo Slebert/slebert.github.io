@@ -15,9 +15,6 @@ body{
 marquee{
 	height:100vh;
 }
-#dvd_video{
-	visibility: hidden;
-}
 .huhu1 {
     background-image: url("../images/dank.webp");
     background-repeat: repeat;

@@ -113,15 +113,28 @@ function jackpot(){
 	}
 }
 function dvdVideo(){
-	dvdVisible = document.getElementById('dvd_video').style.visibility;
-	if (dvdVisible == "visible"){
-		document.getElementById('dvd_video').style.visibility = "hidden";
+	const check = document.getElementById("outerMarq");
+	if(check){
+		check.outerHTML = "";
 	}else{
-		document.getElementById('dvd_video').style.visibility = "visible";
+		const marq = document.createElement("marquee");
+		marq.setAttribute("behavior", "alternate");
+		marq.setAttribute("scrollamount", "30");
+		marq.id = "outerMarq";
+		document.getElementById("huhu1").appendChild(marq);
+		const marqIn = document.createElement("marquee");
+		marqIn.setAttribute("behavior", "alternate");
+		marqIn.setAttribute("scrollamount", "30");
+		marqIn.direction = "down";
+		marqIn.id = "innerMarq";
+		document.getElementById("outerMarq").appendChild(marqIn);
+		const div = document.createElement("div");
+		div.id = "dvd_video";
+		div.classList.add("dvd");
+		document.getElementById("innerMarq").appendChild(div);
 	}
 }
 function lichessTV(){
-
 	const check = document.getElementById("lichessTV");
 	if (check){
 		check.outerHTML = "";
