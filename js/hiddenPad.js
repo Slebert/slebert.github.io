@@ -1,3 +1,5 @@
+dvdVideoNumber = 1;
+
 function setScreen(x) {
 	document.getElementById("screen").innerHTML = x; 
 }
