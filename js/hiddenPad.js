@@ -24,6 +24,7 @@ function submit(){
 	options["69"] = sixtyNine;
 	options["nice!"] = sixtyNine;
 	options["4848"] = bgRandColor;
+	options["420"] = rain;
 	options[submission]();
 }
 function minMax(id) {
@@ -118,5 +119,28 @@ function lichessTV(){
 		div.classList.add("center");
 		document.getElementById("huhu1").appendChild(div);
 		setScreen("lichessTV");
+	}
+}
+function rain(){
+	const check = document.getElementById("rainWrapper");
+	if(check){
+		check.outerHTML = "";
+	}else{
+		const wrapper = document.createElement("div");
+		wrapper.classList.add("rainWrapper");
+		wrapper.id = "rainWrapper";
+		document.getElementById("body").appendChild(wrapper);
+		for(let i = 0; i < 100; i++){
+			const div = document.createElement("div");
+			div.id = "rain";
+			div.classList.add("rain");
+			let position = ((Math.random()*105)-5);
+			div.style.left = position+"vw";
+			let duration = ((Math.random()*2)+0.5);
+			div.style.animationDuration = duration+"s";
+			let delay = ((Math.random()*2));
+			div.style.animationDelay = delay+"s";
+			document.getElementById("rainWrapper").appendChild(div);
+		}
 	}
 }

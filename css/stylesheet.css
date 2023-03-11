@@ -2,6 +2,9 @@
 :root {
     --color1: 68, 76, 247;
 }
+body{
+	overflow: hidden;
+}
 .center {
     display: inline;
 	position: absolute;
@@ -131,10 +134,10 @@
 	margin: 0;
 	background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
 }
-.wrapper {
-  height: 100%;
-  width: 100%;
-  background: none;
+.wrapper .rainWrapper{
+	height: 100%;
+	width: 100%;
+	background: none;
   /* position: absolute; */
 }
 .wrapper div:not(.huhu1) {
@@ -285,5 +288,23 @@ div .dot {
 		color: rgba(var(--color1), 100%);
 		transform-origin: 0 0;
 		transform: scale(3) translate(-50%, -50%);
+	}
+}
+.rain {
+	display: inline;
+	position: absolute;
+	top:-10vh;
+	transform: translate(-50%, -50%);
+	height:32px;
+	width:32px;
+	background-image: url('../images/pixelWeed.webp');
+	animation: rain 2s linear infinite;
+}
+@keyframes rain {
+	from{
+		transform: translateY(-10vh) translateX(0) rotate(0deg);
+	}
+	to{
+		transform: translateY(110vh) translateX(5vw) rotate(360deg);
 	}
 }
