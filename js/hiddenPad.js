@@ -127,7 +127,7 @@ function lichessTV(){
 		setScreen("lichessTV");
 	}
 }
-function rain(drops){
+function rain(drops, count){
 	const check = document.getElementById("rainWrapper");
 	if(check){
 		check.outerHTML = "";
@@ -136,7 +136,7 @@ function rain(drops){
 		wrapper.classList.add("rainWrapper");
 		wrapper.id = "rainWrapper";
 		document.getElementById("body").appendChild(wrapper);
-		for(let i = 0; i < 100; i++){
+		for(let i = 0; i < count; i++){
 			const div = document.createElement("div");
 			div.id = "rain";
 			div.classList.add("rain");
@@ -157,5 +157,5 @@ function rain(drops){
 	}
 }
 function weedRain(){
-	rain("weedDrops");
+	rain("weedDrops", 100);
 }
