@@ -295,11 +295,14 @@ div .dot {
 	position: absolute;
 	top:-10vh;
 	transform: translate(-50%, -50%);
-	height:32px;
-	width:32px;
-	background-image: url('../images/pixelWeed.webp');
 	animation: rain 2s linear infinite;
 }
+.weedDrops{
+	background-image: url('../images/pixelWeed.webp');
+	height:32px;
+	width:32px;
+}
+
 @keyframes rainClockwise {
 	from{
 		transform: translateY(-10vh) translateX(0) rotate(0deg);
