@@ -1,16 +1,22 @@
 @charset "UTF-8";
 :root {
     --color1: 68, 76, 247;
-}
+}/*
 body{
 	overflow: hidden;
-}
+}*/
 .center {
     display: inline;
 	position: absolute;
 	left:50vw;
 	top:50vh;
 	transform: translate(-50%, -50%);
+}
+marquee{
+	height:100vh;
+}
+#dvd_video{
+	visibility: hidden;
 }
 .huhu1 {
     background-image: url("../images/dank.webp");
