@@ -12,7 +12,6 @@ function submit(){
 	const submission = document.getElementById("screen").innerHTML;
 	/* cheater :p */
 	const options = [];
-	const args = [];
 	options["64"] = lichessTV;
 	options["lichessTV"] = lichessTV;
 	options["777"] = jackpot;
