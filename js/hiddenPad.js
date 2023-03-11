@@ -1,4 +1,5 @@
 dvdVideoNumber = 1;
+const test = setInterval(renderDvdVideo,880);
 function setScreen(x) {
 	document.getElementById("screen").innerHTML = x; 
 }
@@ -119,13 +120,14 @@ function dvdVideo(){
 		document.getElementById('dvd_video').style.visibility = "hidden";
 	}else{
 		document.getElementById('dvd_video').style.visibility = "visible";
-		setInterval(renderDvdVideo,880);
+		clearInterval(test);
+		const test = setInterval(renderDvdVideo,880);
 	}
 }
 
 function renderDvdVideo(){
-	document.getElementById("dvd_video").src="images/dvd_video" + dvdVideoNumber +".png";
-	incrementDvdVideoNumber();
+	document.getElementById("dvd_video").src="images/dvd_video" + incrementDvdVideoNumber() +".png";
+	
 }
 
 function incrementDvdVideoNumber(){
@@ -133,6 +135,7 @@ function incrementDvdVideoNumber(){
 		if (dvdVideoNumber>4){
 			dvdVideoNumber=1;
 		}
+	return(dvdVideoNumber);
 }
 function lichessTV(){
 
