@@ -62,6 +62,7 @@ marquee{
 	height: 32px;
 	right: 0px;
 	top: 0px;
+	z-index: 5;
 }
 .minMaxButton:hover{
 	color: #5EC05E;
