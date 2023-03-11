@@ -71,7 +71,7 @@ function underTheSeaBert(){
 	}else{
 		document.getElementById("body").classList.remove("bgLinearGradient");
 		document.getElementById("body").classList.add("bgUnderTheSeaBert");
-		for (let i = 0; i < 14; i++){
+		for (let i = 0; i < 15; i++){
 			const div = document.createElement("div");
 			const span = document.createElement("span");
 			span.classList.add('dot');
