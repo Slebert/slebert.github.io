@@ -127,7 +127,6 @@ function renderDvdVideo(){
 
 	document.getElementById("dvd_video").src="images/dvd_video" + dvdVideoNumber +".png";
 	incrementDvdVideoNumber();
-
 }
 
 function incrementDvdVideoNumber(){
