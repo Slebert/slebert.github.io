@@ -144,6 +144,11 @@ function rain(){
 			div.style.animationDuration = duration+"s";
 			let delay = ((Math.random()*2));
 			div.style.animationDelay = delay+"s";
+			if (Math.random() > 0.5){
+				div.style.animationName = "rainClockwise";
+			}else{
+				div.style.animationName = "rainCounterClockwise"
+			}
 			document.getElementById("rainWrapper").appendChild(div);
 		}
 	}

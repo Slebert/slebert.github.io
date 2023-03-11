@@ -300,11 +300,19 @@ div .dot {
 	background-image: url('../images/pixelWeed.webp');
 	animation: rain 2s linear infinite;
 }
-@keyframes rain {
+@keyframes rainClockwise {
 	from{
 		transform: translateY(-10vh) translateX(0) rotate(0deg);
 	}
 	to{
 		transform: translateY(110vh) translateX(5vw) rotate(360deg);
+	}
+}
+@keyframes rainCounterClockwise {
+	from{
+		transform: translateY(-10vh) translateX(0) rotate(360deg);
+	}
+	to{
+		transform: translateY(110vh) translateX(5vw) rotate(0deg);
 	}
 }
