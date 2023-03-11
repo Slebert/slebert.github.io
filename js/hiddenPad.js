@@ -77,13 +77,17 @@ function slebert(){
 	}
 }
 function underTheSeaBert(){
-	const spanCheck = document.getElementById("dot");
+	const spanCheck = document.getElementById("wrapper");
 	if (spanCheck){
 		document.getElementById("body").classList.remove("bgUnderTheSeaBert");
 		document.getElementById("body").classList.add("bgLinearGradient");
-		document.getElementById("wrapper").innerHTML = "";
+		document.getElementById("wrapper").outerHTML = "";
 		setScreen("123");
 	}else{
+		const wrapper = document.createElement("div");
+		wrapper.id = "wrapper";
+		wrapper.classList.add("wrapper");
+		document.getElementById("huhu1").appendChild(wrapper);
 		document.getElementById("body").classList.remove("bgLinearGradient");
 		document.getElementById("body").classList.add("bgUnderTheSeaBert");
 		for (let i = 0; i < 15; i++){
