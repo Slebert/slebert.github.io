@@ -123,8 +123,6 @@ function dvdVideo(){
 }
 
 function renderDvdVideo(){
-	dvdVisible = document.getElementById('dvd_video').style.visibility;
-
 	document.getElementById("dvd_video").src="images/dvd_video" + dvdVideoNumber +".png";
 	incrementDvdVideoNumber();
 }
