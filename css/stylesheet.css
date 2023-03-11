@@ -308,7 +308,6 @@ div .dot {
 	height:32px;
 	width:32px;
 }
-
 @keyframes rainClockwise {
 	from{
 		transform: translateY(-10vh) translateX(0) rotate(0deg);
@@ -318,10 +317,35 @@ div .dot {
 	}
 }
 @keyframes rainCounterClockwise {
+
 	from{
 		transform: translateY(-10vh) translateX(0) rotate(360deg);
 	}
 	to{
 		transform: translateY(110vh) translateX(5vw) rotate(0deg);
 	}
+}
+@keyframes dvd {
+	0%{
+		background-image:url("../images/dvd_video1.webp");
+	}
+	25%{
+		background-image:url("../images/dvd_video2.webp");
+	}
+	50%{
+		background-image:url("../images/dvd_video3.webp");
+	}
+	75%{
+		background-image:url("../images/dvd_video4.webp");
+	}
+	100%{
+		background-image:url("../images/dvd_video1.webp");
+	}
+}
+.dvd {
+	animation: dvd 4s linear infinite;
+	background-size: contain;
+	background-repeat: none;
+	height:220px;
+	width:422px;
 }
