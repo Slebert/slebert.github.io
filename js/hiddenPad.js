@@ -1,3 +1,5 @@
+var dvdVideoNumber = 1;
+
 function setScreen(x) {
 	document.getElementById("screen").innerHTML = x; 
 }
@@ -26,6 +28,7 @@ function submit(){
 	options["nice!"] = sixtyNine;
 	options["4848"] = bgRandColor;
 	options["420"] = weedRain;
+	options["0"] = dvdVideo;
 	options[submission]();
 }
 function minMax(id) {
@@ -112,8 +115,30 @@ function jackpot(){
 		setScreen("777");
 	}
 }
-function lichessTV(){
+function dvdVideo(){
+	console.log("dvdVideo");
+	dvdVisible = document.getElementById('dvd_video').style.visibility;
+	if (dvdVisible == "visible"){
+		document.getElementById('dvd_video').style.visibility = "hidden";
+	}else{
+		document.getElementById('dvd_video').style.visibility = "visible";
+		setInterval(renderDvdVideo,800);
+	}
+}
 
+function renderDvdVideo(){
+	dvdVisible = document.getElementById('dvd_video').style.visibility;
+	document.getElementById("dvd_video").src="images/dvd_video" + dvdVideoNumber +".png";
+	incrementDvdVideoNumber();
+}
+
+function incrementDvdVideoNumber(){
+	dvdVideoNumber++;
+		if (dvdVideoNumber>4){
+			dvdVideoNumber=1;
+		}
+}
+function lichessTV(){
 	const check = document.getElementById("lichessTV");
 	if (check){
 		check.outerHTML = "";
