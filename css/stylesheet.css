@@ -1,10 +1,10 @@
 @charset "UTF-8";
 :root {
     --color1: 68, 76, 247;
-}/*
+}
 body{
 	overflow: hidden;
-}*/
+}
 .center {
     display: inline;
 	position: absolute;
