@@ -245,25 +245,43 @@ div .dot {
 	font-family: "Lucida Console";
 	font-weight: bold;
 	font-size: 69px; 
-	animation: nice 1.1s linear infinite;
+	animation: nice 2s linear infinite;
 	animation-direction: alternate;
+	color: rgba(var(--color1), 0%);
 }
 @keyframes nice {
 	0%{
-		filter: blur(10px);
+		filter: hue-rotate(0deg) blur(10px);
 		color: rgba(var(--color1), 0%);
 		transform-origin: 0 0;
 		transform: scale(0) translate(-50%, -50%);
-		
+	}
+	20%{
+		filter: hue-rotate(180deg) blur(5px);
+		color: rgba(var(--color1), 50%);
+		transform-origin: 0 0;
+		transform: scale(1.5) translate(-50%, -50%);
+	}
+	40%{
+		filter: hue-rotate(360deg) blur(0px);
+		color: rgba(var(--color1), 100%);
+		transform-origin: 0 0;
+		transform: scale(3) translate(-50%, -50%);
+	}
+	60%{
+		filter: hue-rotate(180deg) blur(0px);
+		color: rgba(var(--color1), 100%);
+		transform-origin: 0 0;
+		transform: scale(3) translate(-50%, -50%);
 	}
 	80%{
-		filter: blur(0px);
+		filter: hue-rotate(0deg) blur(0px);
 		color: rgba(var(--color1), 100%);
 		transform-origin: 0 0;
 		transform: scale(3) translate(-50%, -50%);
 	}
 	100%{
-		filter: blur(0px);
+		filter: hue-rotate(180deg) blur(0px);
 		color: rgba(var(--color1), 100%);
 		transform-origin: 0 0;
 		transform: scale(3) translate(-50%, -50%);
