@@ -126,15 +126,14 @@ function dvdVideo(){
 }
 
 function renderDvdVideo(){
-	document.getElementById("dvd_video").src="images/dvd_video" + incrementDvdVideoNumber() +".png";
-	
+	document.getElementById("dvd_video").src="images/dvd_video" + incrementDvdVideoNumber() + ".webp";
 }
 
 function incrementDvdVideoNumber(){
 	dvdVideoNumber++;
-		if (dvdVideoNumber>4){
-			dvdVideoNumber=1;
-		}
+	if (dvdVideoNumber>4){
+		dvdVideoNumber=1;
+	}
 	return(dvdVideoNumber);
 }
 function lichessTV(){
