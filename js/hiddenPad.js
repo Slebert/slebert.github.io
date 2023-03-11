@@ -22,6 +22,7 @@ function submit(){
 	options["7532378"]= slebert;
 	options["SLEBERT"]= slebert;
 	options["69"] = sixtyNine;
+	options["nice!"] = sixtyNine;
 	options["4848"] = bgRandColor;
 	options[submission]();
 }
@@ -34,16 +35,21 @@ function minMax(id) {
 	}
 }
 function sixtyNine() {
-	setScreen("nice!");
+	
 	const nice = document.getElementById("nice")
-	/*if(nice){
+	if(nice){
+		nice.innerHTML = "";
 		nice.outerHTML = "";
+		setScreen("69");
 	}else{
+		setScreen("nice!");
 		const niceDivBro = document.createElement("div");
 		niceDivBro.id = "nice";
+		niceDivBro.classList.add("center");
+		niceDivBro.classList.add("nice");
+		niceDivBro.innerHTML = "nice!";
 		document.body.appendChild(niceDivBro);
 	}
-	*/
 }
 function inverted(){
 	const body = document.getElementById("body");
