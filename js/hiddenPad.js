@@ -158,22 +158,22 @@ function rain(drops, count){
 		wrapper.id = "rainWrapper";
 		document.getElementById("body").appendChild(wrapper);
 		for(let i = 0; i < count; i++){
-			const div = document.createElement("div");
-			div.id = "rain";
-			div.classList.add("rain");
-			div.classList.add(drops);
+			const span = document.createElement("span");
+			span.id = "rain";
+			span.classList.add("rain");
+			span.classList.add(drops);
 			let position = ((Math.random()*105)-5);
-			div.style.left = position+"vw";
+			span.style.left = position+"vw";
 			let duration = ((Math.random()*2)+0.5);
-			div.style.animationDuration = duration+"s";
+			span.style.animationDuration = duration+"s";
 			let delay = ((Math.random()*2));
-			div.style.animationDelay = delay+"s";
+			span.style.animationDelay = delay+"s";
 			if (Math.random() > 0.5){
-				div.style.animationName = "rainClockwise";
+				span.style.animationName = "rainClockwise";
 			}else{
-				div.style.animationName = "rainCounterClockwise"
+				span.style.animationName = "rainCounterClockwise"
 			}
-			document.getElementById("rainWrapper").appendChild(div);
+			document.getElementById("rainWrapper").appendChild(span);
 		}
 	}
 }
