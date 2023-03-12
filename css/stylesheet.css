@@ -325,23 +325,24 @@ div .dot {
 }
 @keyframes dvd {
 	0%{
-		background-image:url("../images/dvd_video1.webp");
+		filter: hue-rotate(0deg);
 	}
 	25%{
-		background-image:url("../images/dvd_video2.webp");
+		filter: hue-rotate(90deg);
 	}
 	50%{
-		background-image:url("../images/dvd_video3.webp");
+		filter: hue-rotate(180deg);
 	}
 	75%{
-		background-image:url("../images/dvd_video4.webp");
+		filter: hue-rotate(270deg);	
 	}
 	100%{
-		background-image:url("../images/dvd_video1.webp");
+		filter: hue-rotate(360deg);
 	}
 }
 .dvd {
-	animation: dvd 4s linear infinite;
+	background-image:url("../images/dvd_video.webp");
+	animation: dvd 4s ease-in-out infinite;
 	background-size: contain;
 	background-repeat: none;
 	height:220px;
