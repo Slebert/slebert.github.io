@@ -12,20 +12,20 @@ function submit(){
 	const submission = document.getElementById("screen").innerHTML;
 	/* cheater :p */
 	const options = [];
-	options["64"] = lichessTV;
-	options["lichessTV"] = lichessTV;
-	options["777"] = jackpot;
-	options["JACKPOT!"] = jackpot;
-	options["123"] = underTheSeaBert;
-	options["SeaBert"] = underTheSeaBert;
-	options["000000000"] = inverted;
-	options["7532378"]= slebert;
-	options["SLEBERT"]= slebert;
-	options["69"] = sixtyNine;
-	options["nice!"] = sixtyNine;
-	options["4848"] = bgRandColor;
-	options["420"] = weedRain;
 	options["0"] = dvdVideo;
+	options["000000000"] = inverted;
+	options["64"] = lichessTV;
+	options["69"] = sixtyNine;
+	options["123"] = underTheSeaBert;
+	options["420"] = weedRain;
+	options["777"] = jackpot;
+	options["4848"] = bgRandColor;
+	options["7532378"]= slebert;
+	options["nice!"] = sixtyNine;
+	options["JACKPOT!"] = jackpot;
+	options["lichessTV"] = lichessTV;
+	options["SeaBert"] = underTheSeaBert;	
+	options["SLEBERT"]= slebert;
 	try	{
 		options[submission]();
 	} catch(err){
@@ -33,19 +33,17 @@ function submit(){
 	}
 }
 function minMax(id) {
-	const popOut = document.getElementById(id);
-	if (popOut.style.display == 'inline'){
-		popOut.style.display = 'none';
+	const win = document.getElementById(id);
+	if (win.style.display == 'inline'){
+		win.style.display = 'none';
 	}else{
-		popOut.style.display = 'inline';
+		win.style.display = 'inline';
 	}
 }
 function sixtyNine() {
-	
 	const nice = document.getElementById("nice")
 	if(nice){
-		nice.innerHTML = "";
-		nice.outerHTML = "";
+		nice.outerHTML = null;
 		setScreen("69");
 	}else{
 		setScreen("nice!");
@@ -60,7 +58,8 @@ function sixtyNine() {
 function inverted(){
 	const body = document.getElementById("body");
 	if (body.style.filter == "invert(100%)"){
-		body.style = "";
+		body.style.filter = null;
+		body.style.background = null;
 	}else{
 		body.style.filter = "invert(100%)"
 		body.style.background = "black";
@@ -69,7 +68,7 @@ function inverted(){
 function slebert(){
 	const huhu = document.getElementById("slebert");
 	if(huhu){
-		huhu.outerHTML = "";
+		huhu.outerHTML = null;
 	}else{
 		const slebertDiv = document.createElement("div");
 		slebertDiv.id = "slebert";
@@ -86,7 +85,7 @@ function underTheSeaBert(){
 	if (spanCheck){
 		document.getElementById("body").classList.remove("bgUnderTheSeaBert");
 		document.getElementById("body").classList.add("bgLinearGradient");
-		document.getElementById("wrapper").outerHTML = "";
+		document.getElementById("wrapper").outerHTML = null;
 		setScreen("123");
 	}else{
 		const wrapper = document.createElement("div");
@@ -119,7 +118,7 @@ function jackpot(){
 function dvdVideo(){
 	const check = document.getElementById("outerMarq");
 	if(check){
-		check.outerHTML = "";
+		check.outerHTML = null;
 	}else{
 		const marq = document.createElement("marquee");
 		marq.setAttribute("behavior", "alternate");
@@ -141,7 +140,7 @@ function dvdVideo(){
 function lichessTV(){
 	const check = document.getElementById("lichessTV");
 	if (check){
-		check.outerHTML = "";
+		check.outerHTML = null;
 		setScreen("64");
 	}else{
 		const div = document.createElement("div");
@@ -155,7 +154,7 @@ function lichessTV(){
 function rain(drops, count){
 	const check = document.getElementById("rainWrapper");
 	if(check){
-		check.outerHTML = "";
+		check.outerHTML = null;
 	}else{
 		const wrapper = document.createElement("div");
 		wrapper.classList.add("rainWrapper");
