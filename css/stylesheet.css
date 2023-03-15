@@ -248,7 +248,7 @@ div .dot {
 .nice {
 	font-family: "Lucida Console";
 	font-weight: bold;
-	font-size: 69px; 
+	font-size: 6.9vw; 
 	animation: nice 2s linear infinite;
 	animation-direction: alternate;
 	color: rgba(var(--color1), 0%);
