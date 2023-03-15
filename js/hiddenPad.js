@@ -43,7 +43,7 @@ function minMax(id) {
 function sixtyNine() {
 	const nice = document.getElementById("nice")
 	if(nice){
-		nice.outerHTML = null;
+		nice.remove();
 		setScreen("69");
 	}else{
 		setScreen("nice!");
@@ -68,7 +68,7 @@ function inverted(){
 function slebert(){
 	const huhu = document.getElementById("slebert");
 	if(huhu){
-		huhu.outerHTML = null;
+		huhu.remove();
 	}else{
 		const slebertDiv = document.createElement("div");
 		slebertDiv.id = "slebert";
@@ -85,7 +85,7 @@ function underTheSeaBert(){
 	if (spanCheck){
 		document.getElementById("body").classList.remove("bgUnderTheSeaBert");
 		document.getElementById("body").classList.add("bgLinearGradient");
-		document.getElementById("wrapper").outerHTML = null;
+		document.getElementById("wrapper").remove();
 		setScreen("123");
 	}else{
 		const wrapper = document.createElement("div");
@@ -118,18 +118,20 @@ function jackpot(){
 function dvdVideo(){
 	const check = document.getElementById("outerMarq");
 	if(check){
-		check.outerHTML = null;
+		check.remove();
 	}else{
 		const marq = document.createElement("marquee");
 		marq.setAttribute("behavior", "alternate");
 		marq.setAttribute("scrollamount", "30");
 		marq.id = "outerMarq";
+		marq.classList.add("dvdMarquee");
 		document.getElementById("huhu1").appendChild(marq);
 		const marqIn = document.createElement("marquee");
 		marqIn.setAttribute("behavior", "alternate");
 		marqIn.setAttribute("scrollamount", "30");
 		marqIn.direction = "down";
 		marqIn.id = "innerMarq";
+		marqIn.classList.add("dvdMarquee");
 		document.getElementById("outerMarq").appendChild(marqIn);
 		const div = document.createElement("div");
 		div.id = "dvd_video";
@@ -140,7 +142,7 @@ function dvdVideo(){
 function lichessTV(){
 	const check = document.getElementById("lichessTV");
 	if (check){
-		check.outerHTML = null;
+		check.remove();
 		setScreen("64");
 	}else{
 		const div = document.createElement("div");
@@ -154,7 +156,7 @@ function lichessTV(){
 function rain(drops, count){
 	const check = document.getElementById("rainWrapper");
 	if(check){
-		check.outerHTML = null;
+		check.remove();
 	}else{
 		const wrapper = document.createElement("div");
 		wrapper.classList.add("rainWrapper");
@@ -163,8 +165,7 @@ function rain(drops, count){
 		for(let i = 0; i < count; i++){
 			const span = document.createElement("span");
 			span.id = "rain";
-			span.classList.add("rain");
-			span.classList.add(drops);
+			span.classList.add("rain", drops);
 			let position = ((Math.random()*105)-5);
 			span.style.left = position+"vw";
 			let duration = ((Math.random()*2)+0.5);

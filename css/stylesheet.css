@@ -12,9 +12,6 @@ body{
 	top:50vh;
 	transform: translate(-50%, -50%);
 }
-marquee{
-	height:100vh;
-}
 .huhu1 {
     background-image: url("../images/dank.webp");
     background-repeat: repeat;
@@ -345,6 +342,9 @@ div .dot {
 	animation: dvd 4s ease-in-out infinite;
 	background-size: contain;
 	background-repeat: none;
-	height:220px;
-	width:422px;
+	height:110px;
+	width:211px;
+}
+.dvdMarquee {
+	height:100vh;
 }
