@@ -26,7 +26,11 @@ function submit(){
 	options["4848"] = bgRandColor;
 	options["420"] = weedRain;
 	options["0"] = dvdVideo;
-	options[submission]();
+	try	{
+		options[submission]();
+	} catch(err){
+		setScreen("Try Again");
+	}
 }
 function minMax(id) {
 	const popOut = document.getElementById(id);
