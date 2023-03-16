@@ -2,6 +2,7 @@ const options = {
 	/* cheater :p */
 	0:dvdVideo,
 	"000000000":inverted,
+	25:snow,
 	64:lichessTV,
 	69:sixtyNine,
 	123:underTheSeaBert,
@@ -154,7 +155,7 @@ function lichessTV(){
 		setScreen("lichessTV");
 	}
 }
-function rain(drops, count){
+function rain(drops, count = 100, durMult = 1){
 	const check = document.getElementById("rainWrapper");
 	if(check){
 		check.remove();
@@ -169,7 +170,7 @@ function rain(drops, count){
 			span.classList.add("rain", drops);
 			let position = ((Math.random()*105)-5);
 			span.style.left = position+"vw";
-			let duration = ((Math.random()*2)+0.5);
+			let duration = (((Math.random())+0.5)*durMult);
 			span.style.animationDuration = duration+"s";
 			let delay = ((Math.random()*2));
 			span.style.animationDelay = delay+"s";
@@ -183,5 +184,8 @@ function rain(drops, count){
 	}
 }
 function weedRain(){
-	rain("weedDrops", 100);
+	rain("weedDrops", 100, 2);
+}
+function snow(){
+	rain("snowFlakes", 200, 3);
 }
