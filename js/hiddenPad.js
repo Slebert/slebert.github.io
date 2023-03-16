@@ -1,3 +1,20 @@
+const options = {
+	/* cheater :p */
+	0:dvdVideo,
+	"000000000":inverted,
+	64:lichessTV,
+	69:sixtyNine,
+	123:underTheSeaBert,
+	420:weedRain,
+	777:jackpot,
+	4848:bgRandColor,
+	7532378:slebert,
+	"nice!":sixtyNine,
+	"JACKPOT!":jackpot,
+	"lichessTV":lichessTV,
+	"SeaBert":underTheSeaBert,
+	"SLEBERT":slebert
+};
 function setScreen(x) {
 	document.getElementById("screen").innerHTML = x; 
 }
@@ -8,24 +25,8 @@ function keyPressed(key){
 	}
 
 }
-function submit(){
+function kaypadSubmit(){
 	const submission = document.getElementById("screen").innerHTML;
-	/* cheater :p */
-	const options = [];
-	options["0"] = dvdVideo;
-	options["000000000"] = inverted;
-	options["64"] = lichessTV;
-	options["69"] = sixtyNine;
-	options["123"] = underTheSeaBert;
-	options["420"] = weedRain;
-	options["777"] = jackpot;
-	options["4848"] = bgRandColor;
-	options["7532378"]= slebert;
-	options["nice!"] = sixtyNine;
-	options["JACKPOT!"] = jackpot;
-	options["lichessTV"] = lichessTV;
-	options["SeaBert"] = underTheSeaBert;	
-	options["SLEBERT"]= slebert;
 	try	{
 		options[submission]();
 	} catch(err){
