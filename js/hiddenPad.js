@@ -210,7 +210,7 @@ function animeJSRain(drops = "snowFlakes", count = 100, duration = 5000){
 	}
 }
 function weedRain(){
-	animeJSRain("weedDrops", 420, 2400);
+	animeJSRain("weedDrops", 210, 2400);
 }
 function snow(){
 	rain("snowFlakes", 200, 3);
