@@ -292,10 +292,8 @@ div .dot {
 	}
 }
 .rain {
-	display: inline;
 	position: absolute;
 	top:-10vh;
-	transform: translate(-50%, -50%);
 	animation: rain 2s linear infinite;
 }
 .snowFlakes{

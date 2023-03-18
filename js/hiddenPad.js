@@ -58,13 +58,12 @@ function sixtyNine() {
 	}
 }
 function inverted(){
-	const body = document.getElementById("body");
-	if (body.style.filter == "invert(100%)"){
-		body.style.filter = null;
-		body.style.background = null;
+	if (document.body.style.filter == "invert(100%)"){
+		document.body.style.filter = null;
+		document.body.style.background = null;
 	}else{
-		body.style.filter = "invert(100%)"
-		body.style.background = "black";
+		document.body.style.filter = "invert(100%)"
+		document.body.style.background = "black";
 	}
 }
 function slebert(){
@@ -85,8 +84,8 @@ function slebert(){
 function underTheSeaBert(){
 	const spanCheck = document.getElementById("wrapper");
 	if (spanCheck){
-		document.getElementById("body").classList.remove("bgUnderTheSeaBert");
-		document.getElementById("body").classList.add("bgLinearGradient");
+		document.body.classList.remove("bgUnderTheSeaBert");
+		document.body.classList.add("bgLinearGradient");
 		document.getElementById("wrapper").remove();
 		setScreen("123");
 	}else{
@@ -94,8 +93,8 @@ function underTheSeaBert(){
 		wrapper.id = "wrapper";
 		wrapper.classList.add("wrapper");
 		document.getElementById("huhu1").appendChild(wrapper);
-		document.getElementById("body").classList.remove("bgLinearGradient");
-		document.getElementById("body").classList.add("bgUnderTheSeaBert");
+		document.body.classList.remove("bgLinearGradient");
+		document.body.classList.add("bgUnderTheSeaBert");
 		for (let i = 0; i < 15; i++){
 			const div = document.createElement("div");
 			const span = document.createElement("span");
@@ -163,7 +162,7 @@ function rain(drops, count = 100, durMult = 1){
 		const wrapper = document.createElement("div");
 		wrapper.classList.add("rainWrapper");
 		wrapper.id = "rainWrapper";
-		document.getElementById("body").appendChild(wrapper);
+		document.body.appendChild(wrapper);
 		for(let i = 0; i < count; i++){
 			const span = document.createElement("span");
 			span.id = "rain";
@@ -183,8 +182,35 @@ function rain(drops, count = 100, durMult = 1){
 		}
 	}
 }
+function animeJSRain(drops = "snowFlakes", count = 100, duration = 5000){
+	const check = document.getElementById("rainWrapper");
+	if(check){
+		check.remove();
+	}else{
+		const wrapper = document.createElement("div");
+		wrapper.classList.add("rainWrapper");
+		wrapper.id = "rainWrapper";
+		for (let i = 0; i < count; i++) {
+			let drop = document.createElement('span');
+			let position = ((Math.random()*110)-10);
+			drop.classList.add('rain', drops);
+			anime({
+				targets: drop,
+				left: [position+"vw", (position+10)+"vw"],
+				top: [-32, '110vh'],
+				rotate: ((Math.random()*640)-360),
+				delay: (duration / count) * i,
+				duration: (duration-((Math.random()*1000)-500)),
+				easing: 'linear',
+				loop: true
+			});
+			wrapper.appendChild(drop);
+		}
+		document.body.appendChild(wrapper);
+	}
+}
 function weedRain(){
-	rain("weedDrops", 100, 2);
+	animeJSRain("weedDrops", 420, 2400);
 }
 function snow(){
 	rain("snowFlakes", 200, 3);
