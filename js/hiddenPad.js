@@ -7,6 +7,7 @@ const options = {
 	69:sixtyNine,
 	123:underTheSeaBert,
 	420:weedRain,
+	636:slebertMen,
 	777:jackpot,
 	4848:bgRandColor,
 	7532378:slebert,
@@ -215,4 +216,22 @@ function weedRain(){
 }
 function snow(){
 	rain("snowFlakes", 200, 3);
+}
+function slebertMen(){
+	const running = document.getElementById("huhu2");
+	if(running){
+		running.remove();
+		return;
+	}
+	const div = document.createElement('div');
+	const div2 = document.createElement('div');
+	const h1 = document.createElement('h1');
+	div.id = 'huhu2';
+	div.classList.add('huhu2');	
+	div2.id = 'banner';
+	div2.classList.add('banner');
+	h1.innerHTML = 'SLEBERT.MEN'
+	div2.appendChild(h1);
+	div.appendChild(div2);
+	document.getElementById('huhu1').appendChild(div);
 }
