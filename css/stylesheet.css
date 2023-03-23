@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+	font-family: "digitalPlay";
+	src: url(../fonts/digitalPlaySt.ttf);
+}
 :root {
     --color1: 68, 76, 247;
 }
@@ -109,13 +113,13 @@ h1 {
 	margin-right:auto;
 	display:block;
 	text-align: right;
+	vertical-align:top;
 	border-style: none;
 	padding: 2px;
 	margin-bottom:3px;
-	width:90px;
-	height:15px;
-	font-family: "Lucida Console";
-	font-weight:bold;
+	width:125px;
+	height:25px;
+	font-family: "digitalPlay";
 	background-color:black;
 	color: rgba(var(--color1), 100%);
 	background-clip: content-box;
@@ -131,8 +135,8 @@ h1 {
 	border:none;
 	border-radius:5px;
 	text-align: center;
-	width:32px;
-	height:32px;
+	width:43px;
+	height:43px;
 	background: none;
 	font-family: "Consolas";
 	font-weight:bold;
