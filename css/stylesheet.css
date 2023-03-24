@@ -64,19 +64,10 @@ h1 {
     border: none;
     background: none;
 }
-.lichessButton {
+.plusPlus{
 	position: fixed;
 	right: 0px;
 	bottom: 0px;
-	width: 32px;
-	height: 32px;
-	background: none;
-	border: none;
-}
-.lichessButton:hover {
-	background: url("../images/LichessLogo.webp");
-	background-size: 32px;
-	background-repeat: no-repeat;
 }
 .minMaxButton{
 	font-family: "Lucida Console";
