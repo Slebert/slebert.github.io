@@ -59,13 +59,11 @@ function sixtyNine() {
 	}
 }
 function inverted(){
-	if (document.body.style.filter == "invert(100%)"){
-		document.body.style.filter = null;
-		document.body.style.background = null;
+	if (document.getElementById("html").style.filter == "invert(100%)"){
+		document.getElementById("html").style.filter = null;
 		return;
 	}
-	document.body.style.filter = "invert(100%)"
-	document.body.style.background = "black";
+	document.getElementById("html").style.filter = "invert(100%)"
 	
 }
 function slebert(){
