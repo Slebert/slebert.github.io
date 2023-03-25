@@ -101,9 +101,10 @@ h1 {
 	content:"slebert.men";
 	display:block;
 	text-align:center;
-	font-size:.9rem;
+	font-size:.6rem;
 	font-weight:bold;
 	color: white;
+	padding-top:.1rem;
 	font-family: "Consolas";
 	font-weight:bold;
 	filter: drop-shadow(0px 0px 1px black);
@@ -114,14 +115,12 @@ h1 {
 	position: fixed;
 	color: white;
 	background: none;
-	border-radius:1em;
+	border-radius: 1em;
 	border: none;
-	width:1em;
-	height:1em;
 	right: 0;
 	top: 0;
-	padding-right:5px;
-	text-align:center;
+	padding-right: 5px;
+	text-align: center;
 }
 .closeButton:hover{
 	color:black;
