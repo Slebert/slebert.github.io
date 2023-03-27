@@ -5,6 +5,7 @@
 }
 :root {
     --color1: 68, 76, 247;
+	--keypadOpen: 1;
 }
 *{
 	margin: 0;
@@ -94,8 +95,9 @@ h1 {
 	border-color: rgba(var(--color1), 50%);
 	border-radius: 5px;
 	background-color: rgba(var(--color1), 75%);
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%) scale(var(--keypadOpen));
 	z-index: 2;
+	transition: 0.1s;
 }
 .popOut::before{
 	content:"slebert.men";

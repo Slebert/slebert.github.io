@@ -1,7 +1,7 @@
 const options = {
 	/* cheater :p */
 	0:dvdVideo,
-	"000000000":inverted,
+	"000000000":invertItAll,
 	25:snow,
 	64:lichessTV,
 	69:sixtyNine,
@@ -35,14 +35,16 @@ function kaypadSubmit(){
 		setScreen("Try Again");
 	}
 }
-function minMax(id) {
-	const win = document.getElementById(id);
-	if (win.style.display == 'inline'){
-		win.style.display = 'none';
-	}else{
-		win.style.display = 'inline';
+function scale(){
+	let open = getComputedStyle(document.body).getPropertyValue('--keypadOpen');
+	console.log(open);
+	if (open==1){
+		document.querySelector(':root').style.setProperty('--keypadOpen', 0);
+		return;
 	}
+	document.querySelector(':root').style.setProperty('--keypadOpen', 1);
 }
+
 function sixtyNine() {
 	const nice = document.getElementById("nice")
 	if(nice){
@@ -58,7 +60,7 @@ function sixtyNine() {
 		document.body.appendChild(niceDivBro);
 	}
 }
-function inverted(){
+function invertItAll(){
 	if (document.getElementById("html").style.filter == "invert(100%)"){
 		document.getElementById("html").style.filter = null;
 		return;
