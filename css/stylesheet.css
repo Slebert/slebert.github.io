@@ -143,6 +143,7 @@ h1 {
 	color: rgba(var(--color1), 1);
 	background-clip: content-box;
 	box-shadow: inset 0 0 0 2px rgba(var(--color1), 75%);
+	user-select: none;
 }
 .keypad {
 	display: grid;
