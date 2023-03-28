@@ -11,6 +11,7 @@ const options = {
 	777:jackpot,
 	4848:bgRandColor,
 	7532378:slebert,
+	123456789:huRotate,
 	"nice!":sixtyNine,
 	"JACKPOT!":jackpot,
 	"lichessTV":lichessTV,
@@ -37,14 +38,12 @@ function kaypadSubmit(){
 }
 function scale(){
 	let open = getComputedStyle(document.body).getPropertyValue('--keypadOpen');
-	console.log(open);
 	if (open==1){
 		document.querySelector(':root').style.setProperty('--keypadOpen', 0);
 		return;
 	}
 	document.querySelector(':root').style.setProperty('--keypadOpen', 1);
 }
-
 function sixtyNine() {
 	const nice = document.getElementById("nice")
 	if(nice){
@@ -62,10 +61,10 @@ function sixtyNine() {
 }
 function invertItAll(){
 	if (document.getElementById("html").style.filter == "invert(100%)"){
-		document.getElementById("html").style.filter = null;
+		document.getElementById("html").style.filter = "invert(0%)";
 		return;
 	}
-	document.getElementById("html").style.filter = "invert(100%)"
+	document.getElementById("html").style.filter = "invert(100%)";
 	
 }
 function slebert(){
@@ -234,4 +233,18 @@ function slebertMen(){
 	div2.appendChild(h1);
 	div.appendChild(div2);
 	document.getElementById('huhu1').appendChild(div);
+}
+function huRotate(){
+	const ani = document.getElementById("html").style.animationName;
+	if(ani == "hueRotate"){
+		document.getElementById("html").style.animationName = null;
+		document.getElementById("html").style.animationDuration = null;
+		document.getElementById("html").style.animationIterationCount = null;
+		document.getElementById("html").style.animationTimingFunction = null;
+		return;
+	}
+	document.getElementById("html").style.animationName = "hueRotate";
+	document.getElementById("html").style.animationDuration = "2s";
+	document.getElementById("html").style.animationIterationCount = "infinite";
+	document.getElementById("html").style.animationTimingFunction = "linear";
 }
