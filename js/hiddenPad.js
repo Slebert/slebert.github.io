@@ -1,6 +1,5 @@
 const options = {
 	/* cheater :p */
-	0:dvdVideo,
 	"000000000":invertItAll,
 	25:snow,
 	64:lichessTV,
@@ -115,31 +114,6 @@ function jackpot(){
 	}
 	huhu1.style.animationName = "move";
 	setScreen("777");
-}
-function dvdVideo(){
-	const running = document.getElementById("outerMarq");
-	if(running){
-		running.remove();
-		return;
-	}
-	const marq = document.createElement("marquee");
-	marq.setAttribute("behavior", "alternate");
-	marq.setAttribute("scrollamount", "30");
-	marq.id = "outerMarq";
-	marq.classList.add("dvdMarquee");
-	document.getElementById("huhu1").appendChild(marq);
-	const marqIn = document.createElement("marquee");
-	marqIn.setAttribute("behavior", "alternate");
-	marqIn.setAttribute("scrollamount", "30");
-	marqIn.direction = "down";
-	marqIn.id = "innerMarq";
-	marqIn.classList.add("dvdMarquee");
-	document.getElementById("outerMarq").appendChild(marqIn);
-	const div = document.createElement("div");
-	div.id = "dvd_video";
-	div.classList.add("dvd");
-	document.getElementById("innerMarq").appendChild(div);
-	
 }
 function lichessTV(){
 	const running = document.getElementById("lichessTV");

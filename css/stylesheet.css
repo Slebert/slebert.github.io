@@ -100,7 +100,7 @@ h1 {
 	transition: 0.1s;
 }
 .popOut::before{
-	content:"slebert.men";
+	content:"slebert";
 	display:block;
 	text-align:center;
 	font-size:.6rem;
